@@ -1,0 +1,36 @@
+﻿
+
+@model IEnumerable<InvoiceSell>
+@{
+   
+}
+
+<grid model="@Model"></grid>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+
+    @using (Html.BeginForm("Index", "sellinvoice", FormMethod.Get))
+    {
+        <label> Select a status</label>
+        
+        <input type="submit" value="Filter" />
+    }
+
+
+
+    <table id ="invoicesellTable" >
+@foreach(InvoiceSell item in Model)
+{
+  <tr>
+     <td>@item.invoiceNo</td>
+     <td>@item.dateG</td>
+     <td>@item.eName</td>
+     <td>@item.mainContact1</td>
+     <td>@item.aName</td>
+     <td>@item.invoiceVATID</td>
+     <td>@item.clientVendorNo</td>
+  </tr>
+}
+</table>*@
+
